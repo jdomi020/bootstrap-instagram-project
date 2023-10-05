@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <title>this is my bootstrap project</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="bi bi-instagram"></i>
+                Atelieragram
+              </a>
+            <div class="d-flex">
+        <!-- modal button -->
+            <div class="mx-2">
+                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#newPost">
+                Create A New Post
+                </button>
+            </div>
+        <!-- modal button end -->
+
+        
+
+        <!-- dropdown -->
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear-fill"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <hr>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+        </div>
+        <!-- dropdown end -->
+
+    </div>
+
+        <!-- modal -->
+        <div class="modal fade" id="newPost" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Caption:</p>
+                    <div class="input-group">
+                      <textarea class="form-control" aria-label="With textarea"  placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                      <div class="body-buttons-left p-2">
+                          <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                          <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                      </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- modal end -->
+
+            </div>
+          </nav>
+        <!-- navbar end -->
+
+        <!-- tab bar-->
+          <div class="container">
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link text-danger active" id="nav-grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button> 
+                    <button class="nav-link text-secondary" id="nav-scroll-tab" data-bs-toggle="tab" data-bs-target="#scroll" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="bi bi-square-fill"></i></button> 
+                </div>
+            </nav>
+          </div>
+
+
+        <!-- tab content container start -->
+        <div class="tab-content" id="nav-tabContent">
+
+         <!--tab content grid begin  -->
+          <div class="tab-pane fade show active m-2 p-2" id="grid" role="tabpanel" aria-labelledby="nav-grid-tab">
+            <div class="row py-1">
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dcfda00f856f88d924fefe/master/w_1280,c_limit/00012-egonlab-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dcff617a1d1c24dfdf349a/master/w_1280,c_limit/00011-wales-bonner-fall-2023-menswear-credit-brand.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd00dc88e6fefbb631b201/master/w_1280,c_limit/00040-fendi-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+            </div>
+            
+            <div class="row py-3">
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd01ed0a84dd5a5551bfe0/master/w_1280,c_limit/00009-alexander-mcqueen-fall-2023-menswear-credit-brand.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd02b30f856f88d924ff05/master/w_1280,c_limit/00051-fendi-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd08b476ee938d6db16500/master/w_1280,c_limit/00022-etro-fall-2023-menswear-credit-gorunway.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd09c286e181f7f775e5c2/master/w_1280,c_limit/00036-lemaire-fall-2023-menswear-credit-lena-emery.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd0b0b86e181f7f775e5c4/master/w_1280,c_limit/00055-dior-fall-2023-menswear-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd0be042ec49f094f92ce6/master/w_1280,c_limit/00036-gucci-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd0d6c42ec49f094f92ce9/master/w_1280,c_limit/00011-msgm-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd13e086e181f7f775e5ca/master/w_1280,c_limit/00007-saint-laurent-fall-2023-menswear-credit-brand.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd10f086e181f7f775e5c8/master/w_1280,c_limit/00016-givenchy-fall-2023-mens-credit-gorunway.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd12670f856f88d924ff1a/master/w_1280,c_limit/00018-jw-anderson-fall-2023-menswear-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd1266932116cdfba43657/master/w_1280,c_limit/00013-loewe-fall-2023-menswear-credit-gorunway.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://media.vogue.fr/photos/63dd126876ee938d6db16505/master/w_1280,c_limit/00011-bianca-saunders-fall-2023-menswear-credit-gorunway.jpg" class="img-fluid">
+                </div>
+            </div>
+
+          </div>
+          <!-- tab content grid end -->
+
+          <!-- tab content scroll begin -->
+          <div class="container mx-5 px-5">
+          <div class="tab-pane fade p-3" id="scroll" role="tabpanel" aria-labelledby="nav-scroll-tab">
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header d-flex">
+                            A long coat
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/4b5c/52e4/90c3/62a9/4392/41d7/36f7/c21b/7adc/16f5/16f5.jpg">
+                        <div class="card-body">
+                          <h6>589,632 Likes</h6>
+                          <p class="card-text">The maxi coat will be the star piece of winter 2023/24. Enveloping, it goes down to the floor and sweeps the ground, preferably cut in a beautiful wool. Also available in leather, tweed, double-faced cashmere and other materials, it can sometimes be transformed into a cape. Often in black, like a cassock with a gothic twist a la Matrix or Nosferatu, or as a large pelisse, it can be worn bare-chested and bare-legged, as seen at Loewe, Dolce & Gabbana and AMI Paris, among others.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Ami Paris A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col py-4">
+                    <div class="card">
+                        <div class="card-header">
+                          The suit in all its forms
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/f388/df12/84b8/e523/5b4d/1d13/110b/34ae/1fee/3e65/3e65.jpg">
+                        <div class="card-body">
+                          <h6>165,963 Likes</h6>
+                          <p class="card-text">Menswear has gone back to basics, but through a more sophisticated and sharper approach. The suit has been making a strong comeback for several seasons now. But this great classic is revisited in small ways, in the construction, the buttoning and the proportions. An elegant, nonchalant silhouette is favoured, with wide trousers and large, unstructured jackets with drooping shoulders, which are often split, extended into a stole, experimenting with asymmetries and unusual openings, and worn with a turtleneck jumper.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Walter Van Beirendonck A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Loose trousers
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/5d08/0f7b/da46/e9c6/33c2/3739/ca37/e72a/3bb1/4532/4532.jpg">
+                        <div class="card-body">
+                          <h6>326,689 Likes</h6>
+                          <p class="card-text">The silhouette has been elongated more than ever by means of oversized trousers, which drip and sometimes pull at the bottom of the legs in a Nineties spirit. Comfort is key. With darts or zippers, or with pleats or drapes, trousers are worn loose and extra wide, sometimes looking like skirts as at Kenzo. The cargo model, with its maxi pockets, is particularly popular and is available in all materials.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Gucci A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Cozy
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/b799/3fb4/48b0/9105/b815/4911/7de6/924a/029d/171a/171a.jpg">
+                        <div class="card-body">
+                          <h6">85,365 Likes</h6>
+                          <p class="card-text">Although streetwear is less present in menswear, the notion of comfort is no less essential and is even accentuated with an almost affective-child dimension, with many "regressive" pieces referring to childhood. Clothes must protect, but also and above all pamper, through warm and cosy materials and enveloping volumes. Next winter's wardrobe should include at least one loungewear item (pants, jogging bottoms or other pieces, made in an ultra-soft material) and one plush piece, such as a worsted wool jacket or trousers, teddy bear jacket, curly wool cardigans, cashmere ensemble, sheep coat, etc.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Amiri A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          A Scottish touch
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/7e8c/2978/23e7/d148/adb3/7430/8cc0/bee3/9427/1adc/1adc.jpg">
+                        <div class="card-body">
+                          <h6">256,805 Likes</h6>
+                          <p class="card-text">Between tartans, Fair Isle patterns and kilts, the Scottish spirit made a statement on the catwalks this season. First of all with skirts for men. Introduced to menswear a few years ago, the skirt is now omnipresent, especially in the form of a pleated wrap kilt, which is easier to wear. The Scottish thread is also very present through the typical Scottish warrior checks used to underline a punk spirit and grunge style through lumberjack shirts, or a British chic side through the classic checked suit.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Comme des Garcons Homme Plus A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Motopapi
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/be2a/6458/377c/95ee/3b6b/d4f2/7fb6/d232/ee46/9497/9497.jpg">
+                        <div class="card-body">
+                          <h6>736,263 Likes</h6>
+                          <p class="card-text">Shorts worn over trousers or leggings is the latest in winter chic, for a sporty, long-distance runner's look. Large and wide, shorts can be transformed into comfortable Bermuda shorts to replace trousers. The shorts are part of a trend spotted on most catwalks that consists of overlapping multiple layers of clothing. </p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          DSquared2 A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          The tuxedo jacket
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/3403/9b08/24fd/986c/5082/5f29/d662/64a7/a489/8f3d/8f3d.JPG">
+                        <div class="card-body">
+                          <h6>893,658 Likes</h6>
+                          <p class="card-text">With the return to a more traditional wardrobe, the tuxedo jacket is the new must-have piece of the season. Recognizable with its black satin-covered lapels, it is now played down, worn bare-chested, or paired with a hoodie or casual trousers. It is revisited in unusual shapes or turned into coats as seen at Dolce & Gabbana, Emporio Armani, Fendi, Hed Mayner and Sean Suen.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Sankuanz A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Banker blue
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/857a/6d23/6609/8b33/d6a1/9f0b/064d/f174/f412/03bf/03bf.jpg">
+                        <div class="card-body">
+                          <h6>748,695 Likes</h6>
+                          <p class="card-text">This typically masculine sky blue, symbolised by the banker shirt, oscillating between azure blue and a more ash shade, is making a noticeable breakthrough on the catwalks. It is most often seen in total looks or in small touches through just one piece, like a scarf.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          LGN Louis Gabriel Nouchi A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Home sweet home
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/3b14/05bd/b882/e550/2727/605e/8df6/1288/363f/212e/212e.jpg">
+                        <div class="card-body">
+                          <h6>265,654 Likes</h6>
+                          <p class="card-text">The pandemic is not completely over and the domestic dimension is felt in many collections. Bode and Louis Vuitton recreated a real house on their catwalk. Federico Cina and Magliano made their models walk with chairs. At JW Anderson, they held their cushions tightly under their arms or against their chests. From a design point of view, this translates into quilted or blanketed coats, fringed capes and cozy, voluminous ensembles.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Federico Cina A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          Clogs
+                        </div>
+                        <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/7bbc/d44e/c541/0135/b8b0/d94d/10ef/f544/d962/4747/4747.jpg">
+                        <div class="card-body">
+                          <h6>98,652 Likes</h6>
+                          <p class="card-text">Sneakers and boots were seen on many catwalks, from rubber rain boots to leather biker boots, a look that is still very much in vogue. But clogs appear to be the new trend for winter 2023/24. Available from Kenzo, Dries Van Noten, Dhruv Kapoor and Etro, among others, who offer them in felt, embellished with gold studs.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                          Etro A/H 24'
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+          <!-- tab content scroll end -->
+
+        </div>
+        <!-- tab content container end -->
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1b0c6f7184.js" crossorigin="anonymous"></script>
+    </body>
+</html>
